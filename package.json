@@ -1,7 +1,6 @@
 {
   "name": "adminpanelnode",
   "version": "1.0.0",
-  "description": "",
   "license": "ISC",
   "author": "Gaurav",
   "type": "commonjs",
@@ -16,8 +15,18 @@
     "ejs": "^3.1.10",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.0.0",
+    "mongoose": "^9.0.1",
     "multer": "^2.0.2",
     "nodemon": "^3.1.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravapatkar/AdminpanelNode.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gauravapatkar/AdminpanelNode/issues"
+  },
+  "homepage": "https://github.com/gauravapatkar/AdminpanelNode#readme",
+  "description": ""
 }

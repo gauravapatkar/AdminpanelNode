@@ -1,7 +1,7 @@
 const express = require("express");
-const connectToDatabase = require("./data/database");
+const connectToDatabase = require("./data/database.js");
 const routes = require("./routes/routes");
-const cookieParser = require("cookie-parser"); // Add cookie-parser
+const cookieParser = require("cookie-parser"); 
 const path = require("path");
 
 const app = express();
@@ -15,10 +15,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine", "ejs");
-app.use(cookieParser()); // Use cookie-parser middleware
+app.use(cookieParser());
 
 // Routes
-app.use("/", routes); // Mount your routes
+app.use("/", routes); 
 
 // Start the server
 app.listen(PORT, () => {
